@@ -92,6 +92,7 @@ struct hooklist_t
 enum EngineFunc
 {
 	RH_SV_StartSound = BEGIN_FUNC_REGION(engine),
+	RH_ExecuteServerStringCmd,
 	// [...]
 };
 

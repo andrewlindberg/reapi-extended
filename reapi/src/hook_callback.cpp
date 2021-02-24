@@ -16,6 +16,14 @@ void SV_StartSound(IRehldsHook_SV_StartSound *chain, int recipients, edict_t *en
 	callVoidForward(RH_SV_StartSound, original, recipients, indexOfEdict(entity), channel, sample, volume, attenuation, fFlags, pitch);
 }
 
+void ExecuteServerStringCmd(IRehldsHook_ExecuteServerStringCmd* chain, const char* text, cmd_source_t source, IGameClient* client) {
+	auto original = [chain](const char* _text, cmd_source_t _source, int _client)
+	{
+		chain->callNext(_text, _source, g_RehldsSvs->GetClient(_client));
+	};
+
+	callVoidForward(RH_ExecuteServerStringCmd, original, text, source, client ? client->GetId() + 1 : 0);
+}
 /*
 * ReGameDLL functions
 */
