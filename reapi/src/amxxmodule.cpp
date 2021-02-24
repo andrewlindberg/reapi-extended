@@ -22,8 +22,8 @@ static amxx_module_info_s g_ModuleInfo =
 	Plugin_info.version,
 	FALSE,
 	Plugin_info.logtag,
-	"reapi-es",
-	"reapi-es"
+	"reapi-extended",
+	"reapi-extended"
 };
 
 // Storage for the requested functions

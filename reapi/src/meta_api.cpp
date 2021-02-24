@@ -9,7 +9,7 @@ enginefuncs_t *g_pengfuncsTable;
 plugin_info_t Plugin_info =
 {
 	META_INTERFACE_VERSION,			// ifvers
-	"ReAPI-es",				// name
+	"ReAPI-extended",				// name
 	APP_VERSION,					// version
 	APP_COMMIT_DATE,				// date
 	"Asmodai & s1lent",				// author
