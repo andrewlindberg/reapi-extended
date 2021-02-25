@@ -15,6 +15,21 @@ void ExecuteServerStringCmd(IRehldsHook_ExecuteServerStringCmd* chain, const cha
 	callVoidForward(RH_ExecuteServerStringCmd, original, text, source, client ? client->GetId() + 1 : 0);
 }
 
+void SV_SendServerinfo_AMXX(SV_SendServerinfo_t* data, IGameClient* cl) {
+	auto original = [data](int _cl)
+	{
+		data->m_chain->callNext(data->m_args.message, g_RehldsSvs->GetClient(_cl - 1));
+	};
+
+	callVoidForward(RH_SV_SendServerinfo, original, cl->GetId() + 1);
+}
+
+void SV_SendServerinfo(IRehldsHook_SV_SendServerinfo* chain, sizebuf_t* msg, IGameClient* cl) {
+	SV_SendServerinfo_args_t args(msg);
+	SV_SendServerinfo_t data(chain, args);
+	SV_SendServerinfo_AMXX(&data, cl);
+}
+
 /*
 * ReGameDLL functions
 */

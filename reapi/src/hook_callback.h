@@ -319,6 +319,16 @@ struct hookdata_t
 // rehlds functions
 void ExecuteServerStringCmd(IRehldsHook_ExecuteServerStringCmd* chain, const char* text, cmd_source_t source, IGameClient* client);
 
+struct SV_SendServerinfo_args_t
+{
+	SV_SendServerinfo_args_t(sizebuf_t* msg) : message(msg) {}
+
+	sizebuf_t* message;
+};
+
+using SV_SendServerinfo_t = hookdata_t<IRehldsHook_SV_SendServerinfo*, SV_SendServerinfo_args_t&>;
+void SV_SendServerinfo_AMXX(SV_SendServerinfo_t* data, IGameClient* cl);
+void SV_SendServerinfo(IRehldsHook_SV_SendServerinfo* chain, sizebuf_t* msg, IGameClient* cl);
 // regamedll functions
 int GetForceCamera(IReGameHook_GetForceCamera *chain, CBasePlayer *pObserver);
 

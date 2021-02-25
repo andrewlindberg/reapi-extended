@@ -16,4 +16,12 @@ enum EngineFuncEx
 	* Params:       (const cmd[], const cmd_source_t, const client)
 	*/
 	RH_ExecuteServerStringCmd = BEGIN_FUNC_REGION_EX(engine),
+
+	/*
+	* Description: -
+	* Params:       (const client)
+	*/
+	RH_SV_SendServerinfo,
+
+
 };

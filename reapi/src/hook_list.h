@@ -70,6 +70,7 @@ struct hooklist_t
 enum EngineFunc
 {
 	RH_ExecuteServerStringCmd = BEGIN_FUNC_REGION(engine),
+	RH_SV_SendServerinfo,
 	// [...]
 };
 
