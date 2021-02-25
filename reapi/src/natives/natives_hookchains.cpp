@@ -366,19 +366,19 @@ cell AMX_NATIVE_CALL GetCurrentHookChainHandle(AMX* amx, cell* params)
 
 AMX_NATIVE_INFO HookChain_Natives[] =
 {
-	{ "RegisterHookChain2", RegisterHookChain },
+	{ "RegisterHookChainEx", RegisterHookChain },
 
-	{ "EnableHookChain2", EnableHookChain },
-	{ "DisableHookChain2", DisableHookChain },
+	{ "EnableHookChainEx", EnableHookChain },
+	{ "DisableHookChainEx", DisableHookChain },
 
-	{ "SetHookChainReturn2", SetHookChainReturn },
-	{ "GetHookChainReturn2", GetHookChainReturn },
+	{ "SetHookChainReturnEx", SetHookChainReturn },
+	{ "GetHookChainReturnEx", GetHookChainReturn },
 
-	{ "SetHookChainArg2", SetHookChainArg },
+	{ "SetHookChainArgEx", SetHookChainArg },
 
-	{ "IsReapiHookOriginalWasCalled2", IsReapiHookOriginalWasCalled },
+	{ "IsReapiHookOriginalWasCalledEx", IsReapiHookOriginalWasCalled },
 
-	{ "GetCurrentHookChainHandle2", GetCurrentHookChainHandle },
+	{ "GetCurrentHookChainHandleEx", GetCurrentHookChainHandle },
 
 	{ nullptr, nullptr }
 };

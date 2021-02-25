@@ -29,15 +29,7 @@ struct hook_t
 
 extern hook_t hooklist_engine[];
 extern hook_t hooklist_gamedll[];
-/*extern hook_t hooklist_animating[];
 extern hook_t hooklist_player[];
-extern hook_t hooklist_gamerules[];
-extern hook_t hooklist_rechecker[];
-extern hook_t hooklist_grenade[];
-extern hook_t hooklist_weaponbox[];
-extern hook_t hooklist_weapon[];
-extern hook_t hooklist_gib[];
-*/
 
 enum
 {
@@ -56,14 +48,7 @@ struct hooklist_t
 		switch (table) {
 			CASE(engine)
 			CASE(gamedll)
-			/*CASE(animating)
 			CASE(player)
-			CASE(gamerules)
-			CASE(rechecker)
-			CASE(grenade)
-			CASE(weaponbox)
-			CASE(weapon)
-			CASE(gib)*/
 		}
 
 		#undef CASE
@@ -78,21 +63,13 @@ struct hooklist_t
 	{
 		ht_engine,
 		ht_gamedll,
-		ht_animating,
 		ht_player,
-		ht_gamerules,
-		ht_rechecker,
-		ht_grenade,
-		ht_weaponbox,
-		ht_weapon,
-		ht_gib,
 	};
 };
 
 enum EngineFunc
 {
-	RH_SV_StartSound = BEGIN_FUNC_REGION(engine),
-	RH_ExecuteServerStringCmd,
+	RH_ExecuteServerStringCmd = BEGIN_FUNC_REGION(engine),
 	// [...]
 };
 

@@ -9,12 +9,12 @@ enginefuncs_t *g_pengfuncsTable;
 plugin_info_t Plugin_info =
 {
 	META_INTERFACE_VERSION,			// ifvers
-	"ReAPI-extended",				// name
+	"ReAPI-Extended",				// name
 	APP_VERSION,					// version
 	APP_COMMIT_DATE,				// date
 	"Asmodai & s1lent",				// author
 	"https://github.com/s1lentq/reapi/",	// url
-	"ReAPI",				// logtag, all caps please
+	"ReAPI-Ex",				// logtag, all caps please
 	PT_ANYTIME,				// (when) loadable
 	PT_NEVER,				// (when) unloadable
 };
