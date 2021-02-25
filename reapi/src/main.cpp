@@ -42,7 +42,6 @@ void OnMetaDetach()
 {
 	// clear all hooks?
 	g_hookManager.Clear();
-	g_queryFileManager.Clear();
 
 	if (api_cfg.hasReGameDLL()) {
 		g_ReGameHookchains->InstallGameRules()->unregisterHook(&InstallGameRules);
@@ -63,7 +62,6 @@ void ServerDeactivate_Post()
 	g_pEdicts = nullptr;
 	api_cfg.ServerDeactivate();
 	g_hookManager.Clear();
-	g_queryFileManager.Clear();
 	g_entCallback.Clear();
 
 	g_pFunctionTable->pfnSpawn = DispatchSpawn;

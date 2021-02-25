@@ -1,4 +1,4 @@
-LIBRARY reapi_amxx
+LIBRARY reapi_extended_amxx
 EXPORTS
 	GiveFnptrsToDll			@1
 SECTIONS

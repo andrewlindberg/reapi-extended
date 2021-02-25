@@ -13,12 +13,10 @@ inline size_t getFwdParamType(void(*)(RewardType))              { return FP_CELL
 inline size_t getFwdParamType(void(*)(ScenarioEventEndRound))   { return FP_CELL;   }
 inline size_t getFwdParamType(void(*)(ItemID))                  { return FP_CELL;   }
 inline size_t getFwdParamType(void(*)(ItemRestType))            { return FP_CELL;   }
-inline size_t getFwdParamType(void(*)(ResourceType_e))          { return FP_CELL;   }
 inline size_t getFwdParamType(void(*)(float))                   { return FP_FLOAT;  }
 inline size_t getFwdParamType(void(*)(float&))                  { return FP_FLOAT;  }
 inline size_t getFwdParamType(void(*)(const char *))            { return FP_STRING; }
 inline size_t getFwdParamType(void(*)(char *))                  { return FP_STRING; }
-inline size_t getFwdParamType(void(*)(IResourceBuffer*))        { return FP_CELL;   }
 inline size_t getFwdParamType(void(*)(cmd_source_t))			{ return FP_CELL;	}
 
 template<typename T>

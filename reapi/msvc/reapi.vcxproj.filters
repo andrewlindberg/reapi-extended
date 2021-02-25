@@ -615,9 +615,6 @@
     <ClInclude Include="..\src\hook_list.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\reapi_utils.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\hook_callback.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -633,9 +630,6 @@
     <ClInclude Include="..\src\mods\mod_rehlds_api.h">
       <Filter>src\mods</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\mods\mod_vtc_api.h">
-      <Filter>src\mods</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\vtc_api.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -644,9 +638,6 @@
     </ClInclude>
     <ClInclude Include="..\src\main.h">
       <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\mods\mod_reunion_api.h">
-      <Filter>src\mods</Filter>
     </ClInclude>
     <ClInclude Include="..\include\com_progdefs.h">
       <Filter>include</Filter>
@@ -659,12 +650,6 @@
     </ClInclude>
     <ClInclude Include="..\version\appversion.h">
       <Filter>version</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\mods\mod_rechecker_api.h">
-      <Filter>src\mods</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\mods\queryfile_handler.h">
-      <Filter>src\mods</Filter>
     </ClInclude>
     <ClInclude Include="..\include\com_client.h">
       <Filter>include</Filter>
@@ -704,6 +689,9 @@
     </ClInclude>
     <ClInclude Include="..\src\natives\natives_hookchains.h">
       <Filter>src\natives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\reapi_utils.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -758,32 +746,17 @@
     <ClCompile Include="..\src\h_export.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\reapi_utils.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\mods\mod_regamedll_api.cpp">
       <Filter>src\mods</Filter>
     </ClCompile>
     <ClCompile Include="..\src\mods\mod_rehlds_api.cpp">
       <Filter>src\mods</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\mods\mod_vtc_api.cpp">
-      <Filter>src\mods</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\natives\natives_hookchains.cpp">
       <Filter>src\natives</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\mods\mod_reunion_api.cpp">
-      <Filter>src\mods</Filter>
-    </ClCompile>
     <ClCompile Include="..\version\version.cpp">
       <Filter>version</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\mods\mod_rechecker_api.cpp">
-      <Filter>src\mods</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\mods\queryfile_handler.cpp">
-      <Filter>src\mods</Filter>
     </ClCompile>
     <ClCompile Include="..\common\info.cpp">
       <Filter>common</Filter>
@@ -792,6 +765,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\src\amx_hook.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\reapi_utils.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
